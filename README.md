@@ -16,7 +16,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ## Overview
 
-Building an this order summary card component and get it looking as close to the design as possible.
+Build an order summary card component and get it looking as close to the design as possible.
 
 ### The challenge
 
@@ -35,9 +35,9 @@ Users should be able to:
 
 ## My process
 
-1. Study the design and come with prepare a plan for the html structure and class names
-2. Build the HTML
-3. Write the CSS
+1. Study the design and prepare a plan for the html structure and class names.
+2. Build the HTML.
+3. Write the CSS.
 4. Complete the readme file.
 5. Create a github repository and upload files.
 6. Publish the site live on the internet using github hosting.
