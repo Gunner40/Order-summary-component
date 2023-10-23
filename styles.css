@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-pale-blue: hsl(225, 100%, 94%);
+  --primary-bright-blue: hsl(245, 75%, 52%);
+  --neutral-pale-blue: hsl(225, 100%, 98%);
+  --neutral-desaturated-blue: hsl(224, 23%, 55%);
+  --neutral-dark-blue: hsl(223, 47%, 23%);
+  --primary-bright-blue-hover: hsl(245, 69%, 60%);
+}
+
+/* basic styles  */
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  color: var(--neutral-desaturated-blue);
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--primary-pale-blue);
+}
+/* card styles  */
+.card {
+  width: calc(375px - 3em);
+  background-color: white;
+  border-radius: 1em;
+}
+
+.card__content {
+  padding: 1.6em;
+}
+.card__image {
+  width: 100%;
+  display: block;
+  border-radius: 1em 1em 0 0;
+}
+
+.card__heading {
+  color: var(--neutral-dark-blue);
+  margin-bottom: 1rem;
+}
+
+.card__text {
+  margin-bottom: 1.5rem;
+}
+
+.card__plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--neutral-pale-blue);
+  padding: 1em;
+  font-size: 14px;
+  margin-bottom: 1.5rem;
+  border-radius: 0.7rem;
+}
+
+.card__plan__price-section {
+  display: flex;
+  align-items: center;
+}
+
+.card__plan__icon {
+  margin-right: 1.2em;
+}
+
+.card__plan__price-section__data__plan-name {
+  color: var(--neutral-dark-blue);
+  font-weight: bold;
+  margin-bottom: 0.1em;
+}
+
+.card__plan__change-plan-link {
+  color: var(--primary-bright-blue);
+  font-weight: bold;
+  font-size: inherit;
+  font-family: inherit;
+  transition: 0.2s;
+}
+
+.card__payment-button {
+  border: none;
+  background-color: var(--primary-bright-blue);
+  color: var(--neutral-pale-blue);
+  display: block;
+  width: 100%;
+  padding: 1em;
+  font-family: inherit;
+  border-radius: 0.7em;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  box-shadow: 10px 10px 30px hsla(245, 75%, 52%, 0.3);
+  transition: 0.2s;
+}
+
+.card__cancel-payment-link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+/* hover state  */
+.card__payment-button:hover {
+  background-color: var(--primary-bright-blue-hover);
+}
+
+.card__plan__change-plan-link:hover {
+  color: var(--primary-bright-blue-hover);
+}
+
+.card__cancel-payment-link:hover {
+  color: var(--neutral-dark-blue);
+}
+
+/* media query to make slightly wider at fullscreen size  */
+@media screen and (min-width: 600px) {
+  .card {
+    width: 410px;
+  }
+  .card__content {
+    padding: 2.25rem 3rem 2.25rem;
+  }
+}
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
