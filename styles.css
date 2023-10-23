@@ -51,6 +51,7 @@ main {
 .card__heading {
   color: var(--neutral-dark-blue);
   margin-bottom: 1rem;
+  font-size: 1.55rem;
 }
 
 .card__text {
